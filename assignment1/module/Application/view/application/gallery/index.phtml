@@ -1,0 +1,14 @@
+<div class="row">
+    <h1>Gallery</h1>
+    <hr>
+    
+        <?php
+            foreach ($this->data as $image){
+                echo "<a href='/details/$image'>";
+                echo "<div class='col-lg-3 col-md-4 thumb'>";
+                echo "<img class=\"img-responsive img-thumbnail \" src='" . '/images/thumbnails/' . $image .".jpg'" . "/>";
+                echo "</div>";
+                echo "</a>";
+            }
+        ?>
+</div>
